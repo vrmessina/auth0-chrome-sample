@@ -1,0 +1,26 @@
+{
+  "name": "auth0-chrome-sample",
+  "version": "0.0.0",
+  "description": "Sample showing how to use Auth0 in a Chrome extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auth0-community/auth0-chrome-sample.git"
+  },
+  "keywords": [
+    "Chrome",
+    "Auth0"
+  ],
+  "author": "Auth0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/auth0-community/auth0-chrome-sample/issues"
+  },
+  "homepage": "https://github.com/auth0-community/auth0-chrome-sample#readme",
+  "dependencies": {
+    "auth0-chrome": "^0.1.0"
+  }
+}
