@@ -4,6 +4,8 @@ This sample demonstrates how to add authentication to a Chrome extension with Au
 
 For detailed instructions on integrating Auth0 in a Chrome extension, see the [full documentation](https://auth0.com/docs/quickstart/native/chrome-extension).
 
+Chrome extensions are packaged as `.crx` files for distribution but may be loaded "unpacked" for development. For more information on how to load an unpacked extension, see the [Chrome extension docs](https://developer.chrome.com/extensions/getstarted#unpacked).
+
 ## Running the Sample
 
 ### Sign Up for Auth0
