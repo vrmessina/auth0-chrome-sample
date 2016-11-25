@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/auth0-community/auth0-chrome-sample#readme",
   "dependencies": {
-    "auth0-chrome": "^0.1.0"
+    "auth0-chrome": "^0.1.0",
+    "jwt-decode": "^2.1.0"
   }
 }

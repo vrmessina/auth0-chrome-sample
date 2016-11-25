@@ -1,9 +1,9 @@
-function isLoggedIn (token) {
-  return true;
-  // return decodeJwt(token).exp > Date.now() / 1000;
+function isLoggedIn(token) {
+  // The user is logged in if their token isn't expired
+  return jwt_decode(token).exp > Date.now() / 1000;
 }
 
-function logout(){
+function logout() {
   // Remove the idToken from storage
   localStorage.clear();
   main();
@@ -14,7 +14,7 @@ const $$ = document.querySelectorAll.bind(document);
 const $  = document.querySelector.bind(document);
 
 
-function renderProfileView(authResult){
+function renderProfileView(authResult) {
   $('.default').classList.add('hidden');
   $('.loading').classList.remove('hidden');
   fetch(`https://${env.AUTH0_DOMAIN}/userinfo`, {
@@ -39,7 +39,7 @@ function renderProfileView(authResult){
 }
 
 
-function renderDefaultView(){
+function renderDefaultView() {
   $('.default').classList.remove('hidden');
   $('.profile').classList.add('hidden');
   $('.loading').classList.add('hidden');
@@ -55,12 +55,12 @@ function renderDefaultView(){
 
 function main () {
   const authResult = JSON.parse(localStorage.authResult || '{}');
-  if (authResult.access_token) {
+  const token = authResult.id_token;
+  if (token && isLoggedIn(token)) {
     renderProfileView(authResult);
   } else {
     renderDefaultView();
   }
 }
-
 
 document.addEventListener('DOMContentLoaded', main);

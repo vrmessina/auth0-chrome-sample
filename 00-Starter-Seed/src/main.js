@@ -22,12 +22,12 @@ chrome.runtime.onMessage.addListener(function (event) {
           message: 'You can use the app now'
         });
       }).catch(function (err) {
-      chrome.notifications.create({
-        type: 'basic',
-        title: 'Login Failed',
-        message: err.message,
-        iconUrl: 'icons/icon128.png'
+        chrome.notifications.create({
+          type: 'basic',
+          title: 'Login Failed',
+          message: err.message,
+          iconUrl: 'icons/icon128.png'
+        });
       });
-    });
   }
 });
