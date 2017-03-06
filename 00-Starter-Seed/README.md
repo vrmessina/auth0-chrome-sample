@@ -2,7 +2,7 @@
 
 This sample demonstrates how to add authentication to a Chrome extension with Auth0. It uses Auth0's hosted Lock widget with Chrome's `launchWebAuthFlow`.
 
-For detailed instructions on integrating Auth0 in a Chrome extension, see the [full documentation](https://auth0.com/docs/quickstart/native/chrome-extension).
+For detailed instructions on integrating Auth0 in a Chrome extension, see the [full documentation](https://auth0.com/docs/quickstart/native/chrome).
 
 Chrome extensions are packaged as `.crx` files for distribution but may be loaded "unpacked" for development. For more information on how to load an unpacked extension, see the [Chrome extension docs](https://developer.chrome.com/extensions/getstarted#unpacked).
 
