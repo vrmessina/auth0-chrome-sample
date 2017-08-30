@@ -4,10 +4,11 @@ chrome.runtime.onMessage.addListener(function (event) {
     // scope
     //  - openid if you want an id_token returned
     //  - offline_access if you want a refresh_token returned
+    //  - profile if you want an additional claims like name, nickname, picture and updated_at.
     // device
     //  - required if requesting the offline_access scope.
     let options = {
-      scope: 'openid offline_access',
+      scope: 'openid profile offline_access',
       device: 'chrome-extension'
     };
 

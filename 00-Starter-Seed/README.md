@@ -39,12 +39,7 @@ window.env = {
 
 ### Install the Dependencies
 
-Install the `auth0-chrome` package with npm.
-
-```bash
-npm install auth0-chrome
-```
-Install the `jwt-decode` package with npm.
+Install the dependencies with npm by running:
 
 ```bash
 npm install
