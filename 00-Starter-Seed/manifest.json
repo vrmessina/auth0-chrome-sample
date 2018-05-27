@@ -14,6 +14,7 @@
     },
     "permissions": [
         "identity",
-        "notifications"
+        "notifications",
+        "https://*.auth0.com/*"
     ]
 }
