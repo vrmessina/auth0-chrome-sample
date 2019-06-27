@@ -6,6 +6,19 @@ function isLoggedIn(token) {
 function logout() {
   // Remove the idToken from storage
   localStorage.clear();
+  let logoutUrl = new URL(`https://${env.AUTH0_DOMAIN}/v2/logout`);
+  const params = {
+    client_id: env.AUTH0_CLIENT_ID,
+    returnTo: chrome.identity.getRedirectURL() + 'auth0'
+  };
+  logoutUrl.search = new URLSearchParams(params);
+  chrome.identity.launchWebAuthFlow({
+      'url': logoutUrl.toString()
+    },
+    function(responseUrl) {
+      console.log(responseUrl);
+    }
+  );
   main();
 }
 

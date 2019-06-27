@@ -25,6 +25,12 @@ In the **Allowed Callback URLs** section, whitelist your callback URL.
 https://<YOUR_APP_ID>.chromiumapp.org/auth0
 ```
 
+In the **Allowed Logout URLs** section, whitelist your logout URL.
+
+```bash
+https://<YOUR_APP_ID>.chromiumapp.org/auth0
+```
+
 In the **Allowed Origins** section, whitelist your chrome extension as an origin.
 
 ```bash
