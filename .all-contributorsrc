@@ -14,6 +14,15 @@
         "maintenance",
         "review"
       ]
+    },
+    {
+      "login": "chenkie",
+      "name": "Ryan Chenkie",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1847678?v=4",
+      "profile": "http://ryanchenkie.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
